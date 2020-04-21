@@ -1,0 +1,156 @@
+body{
+	 background-image: url("17545.jpg");
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: cover;
+	}
+    /*background: url('https://www.elsetge.cat/myimg/f/160-1600491_autodesk-wallpaper-website-background.jpg') no-repeat center center fill;
+}*/
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+/*    background-color: aliceblue;*/
+}
+.first-h1{
+    margin-right: auto;
+    padding-left: 50px;
+    margin-top: 50px;
+    color: gray;
+}
+body{
+    margin: 0;
+}
+a{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 350px;
+/*    background-color: aliceblue;*/
+    width: 100%;
+}
+.pro-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 60px;
+    margin-top: 30px;
+    background-color:lightslategray;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.73,-0.33,.37,1.43);
+
+}
+.pro-pic:hover{
+    transform: rotate(360deg) scale(1.4);
+    background-color: gray;
+}
+.text-1{
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-top: 50px;
+    height: 100px;
+    font-weight: lighter;
+    color: lightslategray;
+    font-size: larger;
+}
+
+main{
+ display: grid;
+ grid-template-columns: 30% 30% 30%;
+ grid-template-rows: 1fr 1fr 1fr;  
+/* width: 100vw;  */
+justify-content: space-around;
+/* row-gap: 5px;
+column-gap: 5px; */
+/* margin: 0 auto; */
+/*background-color: aliceblue;*/
+}
+.content{
+display: block;
+text-align: center;
+border-bottom: 4px solid lightgray;
+margin-top: 30px;
+/* padding: 20px; */
+transition-duration: .5s;
+border-radius: 10px;
+}
+
+.content:hover{
+    background-color: white;
+    border-bottom: 4px solid lightsalmon;
+    box-shadow: 0 3px 25px rgb(85, 80, 80);
+}
+
+.home-icon::before{
+    content: "";
+    display: block;
+    background: url("https://img.icons8.com/metro/26/000000/home.png") no-repeat top left;
+    width: 10px;
+    height: 30px;
+    float: left;
+    /* margin-right: 20px; */
+    padding: 10px 10px 20px 10px;
+}
+
+
+.main-pic{
+    object-fit: fill;
+    margin-top: 15px;
+    height: 150px;
+    width: 370px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.heading-text{
+    font-size: medium;
+    color: gray;
+    }
+
+.paragraph-text{
+    font-size: medium;
+    font-weight: lighter;
+    color: gray;
+}
+
+span{
+    font-weight: bold;
+}
+footer{
+    display: inline;
+    text-align: center;
+}
+
+.skills{
+	display: grid;
+	grid-template-columns:repeat(7,minmax(100px,1fr));
+	grid-template-rows: 1fr;
+	grid-gap: 20px;
+	grid-template-areas: item;
+	align-items: center;
+	margin-left: 50px
+}
+.skill-pic{
+	height: 100px;
+	width: 100px;
+	transition: transform .5s cubic-bezier(.73,-0.33,.37,1.43);
+}
+.skill-pic:hover{
+	transform: scale(1.5) rotate(360deg);
+}
+
+.item-1{
+	grid-area: item;
+}
